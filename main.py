@@ -28,7 +28,7 @@ def main(env_name, render=False, monitor=True, load=False, seed=0):
 
     if monitor:
         env.monitor.start(view_path, video_callable=None, force=True, seed=seed)
-    for i_episode in xrange(2000):
+    for i_episode in xrange(1000):
         observation = env.reset()
         r_sum = 0
         q_list = []
